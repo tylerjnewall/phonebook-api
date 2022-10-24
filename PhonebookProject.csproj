@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Domain\" />
+    <None Remove="Features\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Controllers\" />
+    <None Remove="MediatR" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="FluentValidation" />
+    <None Remove="Features\Phonebook\" />
+    <None Remove="Features\Phonebook\Contacts\" />
+    <None Remove="Features\Phonebook\Contacts\Commands\" />
+    <None Remove="Features\Phonebook\Contacts\Queries\" />
+    <None Remove="Features\Phonebook\Contacts\Queries\GetAllContacts\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Profiles\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Features\Phonebook\Contacts\Queries\GetContact\" />
+    <None Remove="Features\Phonebook\Contacts\Commands\AddContact\" />
+    <None Remove="Features\Phonebook\Contacts\Commands\DeleteContact\" />
+    <None Remove="Features\Phonebook\Contacts\Commands\UpdateContact\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="Exceptions\" />
+    <None Remove="Middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Features\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Features\Phonebook\" />
+    <Folder Include="Features\Phonebook\Contacts\" />
+    <Folder Include="Features\Phonebook\Contacts\Commands\" />
+    <Folder Include="Features\Phonebook\Contacts\Queries\" />
+    <Folder Include="Features\Phonebook\Contacts\Queries\GetAllContacts\" />
+    <Folder Include="Profiles\" />
+    <Folder Include="Features\Phonebook\Contacts\Queries\GetContact\" />
+    <Folder Include="Features\Phonebook\Contacts\Commands\AddContact\" />
+    <Folder Include="Features\Phonebook\Contacts\Commands\DeleteContact\" />
+    <Folder Include="Features\Phonebook\Contacts\Commands\UpdateContact\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+</Project>
